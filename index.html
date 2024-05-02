@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Palindrome Checker</title>
+  <link rel="icon" type="image/svg+xml" href="palindrome-logo.svg">
+  <meta name="description" content="Check if a word or phrase is a palindrome">
 </head>
 <body>
 
 <div class="container">
   <h1>Palindrome Checker</h1>
-  <input type="text" id="text-input" placeholder="Enter text here">
-  <button id="check-btn">Check</button>
+  <form id="palindrome-form">
+    <label for="text-input" class="visually-hidden">Enter text to check</label>
+    <input type="text" id="text-input" placeholder="Enter text here" autocomplete="off" required>
+    <button type="submit" id="check-btn">Check</button>
+  </form>
   <div id="result"></div>
 </div>
 
